@@ -120,8 +120,6 @@ footer {
 }
 
 .products_footer {
-  position: absolute;
-  bottom: -340rem;
   width: 100%;
 }
 
@@ -142,6 +140,7 @@ footer {
 .dropdown-menu, .dropdown-item {
   font-family: "Playfair Display SC", serif;
   font-style: none;
+  font-size: 14px;
 }
 
 header {
@@ -210,11 +209,12 @@ header {
 .direction1 {
   padding: 2rem;
   color: white;
+  text-align: left;
 }
 
 .imgFondo {
   width: 100%;
-  margin-top: 8%;
+  margin-top: 100px;
 }
 
 .mainSectionDirections {
@@ -240,8 +240,9 @@ header {
 
 .h3Directions {
   position: absolute;
-  margin-top: 30%;
-  margin-left: 35%;
+  width: 500px;
+  margin-top: calc(50vh - .5rem);
+  margin-left: calc(50vw - 250px);
   z-index: 1;
   text-transform: uppercase;
   font-family: 'Playfair Display SC', serif;
@@ -251,14 +252,14 @@ header {
           animation-duration: 2s;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  font-size: 1.35rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .mainProducts {
   margin-right: 0;
   width: 100%;
-  margin-top: 8%;
-  position: absolute;
+  position: relative;
 }
 
 .wine_products {
@@ -268,8 +269,10 @@ header {
 
 .wine_div_phrase {
   text-align: center;
-  padding: 8rem 0;
-  height: 50rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .w_malbec {
@@ -333,7 +336,6 @@ header {
 
 .work_footer {
   position: relative;
-  bottom: -6rem;
 }
 
 .workForm {
