@@ -29,12 +29,17 @@
 
 .container-fluid {
   position: fixed;
+  padding: .5rem 0;
 }
 
 .row {
   width: 100%;
   margin-left: 0rem;
   margin-right: -0rem;
+}
+
+.mainHome {
+  height: 100vh;
 }
 
 .img-fluid, .imgAndeluna {
@@ -44,6 +49,10 @@
 
 .imgCarousel1, .container-fluid {
   width: 100%;
+}
+
+.carouselImage {
+  height: 100vh;
 }
 
 .imgAndeluna {
@@ -84,10 +93,11 @@ li .nav-link {
 
 .h1Title {
   font-weight: bold;
+  font-size: 32px;
 }
 
 .h2Footer {
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -98,13 +108,15 @@ li .nav-link {
 footer {
   background-color: #3d342d;
   color: white;
-  bottom: 0;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .index_footer {
-  position: static;
-  bottom: 0;
-  height: 7rem;
+  position: relative;
 }
 
 .products_footer {
@@ -115,7 +127,7 @@ footer {
 
 .noCommerce {
   font-family: "Playfair Display SC", serif;
-  font-size: 0.8rem;
+  font-size: 10px;
 }
 
 .homeHover:hover, .aboutUsHover:hover, .productsHover:hover, .directionsHover:hover, .workHover:hover, .h1Title:hover {
@@ -154,8 +166,8 @@ header {
 .aboutUsVideo {
   display: inline-block;
   width: 100%;
-  height: 40rem;
-  margin-top: 22%;
+  height: calc(100vh - 100px);
+  margin-top: 100px;
 }
 
 .paboutUs {
@@ -173,6 +185,7 @@ header {
   padding: 1.3rem;
   width: 40%;
   font-style: italic;
+  font-size: 18px;
 }
 
 .boxImgDirections {
