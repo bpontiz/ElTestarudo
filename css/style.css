@@ -487,12 +487,12 @@ header {
     display: block;
   }
   .main-container-fluid {
-    position: absolute;
+    position: relative;
     top: 30%;
   }
   .container-fluid-footer {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
   }
   .aboutUsVideo {
@@ -684,12 +684,15 @@ header {
     font-size: 0.8rem;
   }
   .main-container-fluid {
-    position: absolute;
+    position: relative;
     top: 30%;
+  }
+  .carouselImage {
+    height: 100vh;
   }
   .container-fluid-footer {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
   }
   .aboutUsVideo {
@@ -708,14 +711,23 @@ header {
     margin: 0rem;
     width: 100%;
   }
-  .index_footer {
-    position: absolute;
-    bottom: -10rem;
+
+  footer {
+    background-color: #3d342d;
+    color: white;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .footer_aboutUs {
-    position: static;
-    bottom: 0;
+  
+  .noCommerce {
+    font-family: "Playfair Display SC", serif;
+    font-size: 12px;
   }
+
+  
   .h2Footer {
     font-size: 1.5rem;
   }
@@ -723,10 +735,7 @@ header {
     position: absolute;
     margin-top: 40%;
   }
-  .products_footer {
-    position: absolute;
-    bottom: -220rem;
-  }
+  
   .header_directions {
     top: 0;
   }
@@ -743,11 +752,7 @@ header {
     left: -2rem;
     font-size: 0.8rem;
   }
-  .footer_directions {
-    margin-top: -1rem;
-    position: static;
-    bottom: 0;
-  }
+  
   .work_header {
     top: 0;
   }
